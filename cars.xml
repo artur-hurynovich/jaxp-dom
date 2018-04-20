@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cars>
+<car>
+	<mark>Audi</mark>
+	<model>Q7</model>
+	<techChar>
+		<date>2016-05-10</date>
+		<engineCapacity>3.0</engineCapacity>
+		<engineType>Diesel</engineType>
+	</techChar>
+</car>
+<car>
+	<mark>BMW</mark>
+	<model>X5</model>
+	<techChar>
+		<date>2010-07-04</date>
+		<engineCapacity>4.4</engineCapacity>
+		<engineType>Gasoline</engineType>
+	</techChar>
+</car>
+<car>
+	<mark>Porsche</mark>
+	<model>911</model>
+	<techChar>
+		<date>2005-01-12</date>
+		<engineCapacity>5.0</engineCapacity>
+		<engineType>Gasoline</engineType>
+	</techChar>
+</car>
+<car>
+	<mark>Volkswagen</mark>
+	<model>Passat</model>
+	<techChar>
+		<date>1989-09-02</date>
+		<engineCapacity>1.6</engineCapacity>
+		<engineType>Diesel</engineType>
+	</techChar>
+</car>
+</cars>
