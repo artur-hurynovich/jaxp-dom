@@ -71,7 +71,9 @@ class Car {
         }
         @Override
         public String toString() {
-            return date.toGregorianCalendar().toZonedDateTime().toLocalDate().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)) + ", " + engineCapacity + " (" + engineType + ")";
+            return date.toGregorianCalendar().toZonedDateTime().toLocalDate().
+                format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)) + ", " + 
+                engineCapacity + " (" + engineType + ")";
         }
     }
     void setMark(String mark) {
@@ -119,7 +121,8 @@ class CarBuilder {
         String model = elementCar.getChildNodes().item(1).getTextContent();
         NodeList characteristics = elementCar.getChildNodes().item(2).getChildNodes();
         char[] dateChars = characteristics.item(0).getTextContent().toCharArray();
-        String year = new StringBuilder().append(dateChars[0]).append(dateChars[1]).append(dateChars[2]).append(dateChars[3]).toString();
+        String year = new StringBuilder().append(dateChars[0]).append(dateChars[1]).append(dateChars[2]).a
+            ppend(dateChars[3]).toString();
         String month = new StringBuilder().append(dateChars[5]).append(dateChars[6]).toString();
         String day = new StringBuilder().append(dateChars[8]).append(dateChars[9]).toString();
         LocalDate date = LocalDate.of(Integer.valueOf(year), Integer.valueOf(month), Integer.valueOf(day));
